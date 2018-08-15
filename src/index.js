@@ -1,11 +1,18 @@
 import React, { Fragment, Component } from 'react';
-import './index.css';
 
 class ButtonBlue extends Component {
   render() {
+
+    const styleButtonBlue = {
+      border: 'none',
+      backgroundColor: '#0000ff',
+      color: '#ffffff',
+      borderRadius: '5px'
+    };
+
     return (
       <Fragment>
-        <button className="button-blue">
+        <button className={styleButtonBlue}>
           Blue Button
         </button>
       </Fragment>
