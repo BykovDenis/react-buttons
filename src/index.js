@@ -1,17 +1,18 @@
 import React, { Fragment, Component } from 'react';
 import injectSheet from 'react-jss';
 
+const styles = {
+  styleButtonBlue: {
+    border: 'none',
+    backgroundColor: '#0000ff',
+    color: '#ffffff',
+    borderRadius: '5px'
+  },
+};
+
 class ButtonBlue extends Component {
 
   render() {
-    const styles = {
-      styleButtonBlue: {
-        border: 'none',
-        backgroundColor: '#0000ff',
-        color: '#ffffff',
-        borderRadius: '5px'
-      },
-    };
     return (
       <Fragment>
         <button className={props.classes.styleButtonBlue}>

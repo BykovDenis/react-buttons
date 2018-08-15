@@ -1914,6 +1914,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var styles = {
+  styleButtonBlue: {
+    border: 'none',
+    backgroundColor: '#0000ff',
+    color: '#ffffff',
+    borderRadius: '5px'
+  }
+};
+
 var ButtonBlue = function (_Component) {
   _inherits(ButtonBlue, _Component);
 
@@ -1926,14 +1935,6 @@ var ButtonBlue = function (_Component) {
   _createClass(ButtonBlue, [{
     key: 'render',
     value: function render() {
-      var styles = {
-        styleButtonBlue: {
-          border: 'none',
-          backgroundColor: '#0000ff',
-          color: '#ffffff',
-          borderRadius: '5px'
-        }
-      };
       return _react2.default.createElement(
         _react.Fragment,
         null,
