@@ -1940,7 +1940,7 @@ var ButtonBlue = function (_Component) {
         null,
         _react2.default.createElement(
           'button',
-          { className: props.classes.styleButtonBlue },
+          { className: this.props.classes.styleButtonBlue },
           'Blue Button'
         )
       );

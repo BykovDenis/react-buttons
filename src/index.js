@@ -15,7 +15,7 @@ class ButtonBlue extends Component {
   render() {
     return (
       <Fragment>
-        <button className={props.classes.styleButtonBlue}>
+        <button className={this.props.classes.styleButtonBlue}>
           Blue Button
         </button>
       </Fragment>
