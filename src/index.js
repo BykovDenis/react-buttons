@@ -1,18 +1,20 @@
 import React, { Fragment, Component } from 'react';
+import injectSheet from 'react-jss';
 
 class ButtonBlue extends Component {
+
   render() {
-
-    const styleButtonBlue = {
-      border: 'none',
-      backgroundColor: '#0000ff',
-      color: '#ffffff',
-      borderRadius: '5px'
+    const styles = {
+      styleButtonBlue: {
+        border: 'none',
+        backgroundColor: '#0000ff',
+        color: '#ffffff',
+        borderRadius: '5px'
+      },
     };
-
     return (
       <Fragment>
-        <button className={styleButtonBlue}>
+        <button className={props.classes.styleButtonBlue}>
           Blue Button
         </button>
       </Fragment>
@@ -20,4 +22,4 @@ class ButtonBlue extends Component {
   }
 }
 
-export default ButtonBlue;
+export default injectSheet(styles)(ButtonBlue);
