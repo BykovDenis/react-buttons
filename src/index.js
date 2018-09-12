@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 
 const styles = {
   styleButtonBlue: {
+    position: 'relative',
     border: 'none',
     backgroundColor: '#0000ff',
     color: '#ffffff',
